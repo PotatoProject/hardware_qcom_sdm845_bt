@@ -1,4 +1,4 @@
-ifeq ($(call my-dir),$(call project-path-for,qcom-bt-vendor))
+ifeq ($(call my-dir),hardware/qcom/sdm845/bt)
 
 LOCAL_PATH := $(call my-dir)
 
@@ -13,7 +13,7 @@ endif # is-vendor-board-platform
 include $(TMP_LOCAL_PATH)/tools/Android.mk
 
 ifeq ($(TARGET_USE_QTI_BT_STACK),true)
-include $(TMP_LOCAL_PATH)/bthost_ipc/Android.mk
+#include $(TMP_LOCAL_PATH)/bthost_ipc/Android.mk
 endif #TARGET_USE_QTI_BT_STACK
 
 endif
